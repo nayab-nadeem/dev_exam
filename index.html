@@ -1,0 +1,587 @@
+<html>
+<!DOCTYPE html>
+<head>
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<title>Puffy Dev Exam by Nayab Nadeem</title>
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<style type="text/css">
+.container {
+	margin-left: 10%;
+	margin-right: 10%;
+	font-family: 'Open Sans', sans-serif;
+	text-align: center;
+	margin-bottom: 5%;
+}
+
+.mattress_text {
+	background-color: #f9f9f9;
+	color: #004991;
+	font-size: 10px;
+	border-radius: 5%;
+	padding: 0px 4px 0px 2px;
+	opacity: 0.8;
+	font-weight: 600;
+}
+
+.btn {
+	background-color: white;
+	color: #004991;
+	font-size: 65%;
+	opacity: 0.8;
+	margin-right: 4px;
+	padding: 2px 4px;
+	cursor: pointer;
+	border: none;
+}
+
+p {
+	font-size: 80%;
+}
+
+li {
+	list-style: none;
+}
+
+.col-1,
+.col-2,
+.col-3 {
+	width: 33%;
+}
+
+.price_left,
+.price_right {
+	margin-left: 10%;
+	margin-right: 10%;
+}
+
+.grid,
+.price_list {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.grid_element_left,
+.grid_element_right,
+.price_left,
+.price_right {
+	width: 50%;
+}
+
+.price_left,
+.price_right {
+	display: flex;
+}
+
+.card__list {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.card__list div {
+	flex-grow: 1;
+}
+
+.section_3 {
+	height: 50%;
+	margin-top: 5%;
+}
+
+.list__element__1 {
+	background: url(1st.png) center;
+	height: 80px;
+	background-repeat: no-repeat;
+	background-size: 433px 153px;
+	display: flex;
+	flex-direction: column;
+}
+
+.list__element__1 li {
+	text-align: center;
+	margin-top: auto;
+}
+
+.list__element__2 {
+	background: url(3rd.png);
+	height: 58px;
+	background-repeat: no-repeat;
+	background-size: 439px 112px;
+	background-position: bottom;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: -27px;
+}
+
+.list__element__2 button {
+	text-align: center;
+	margin-top: 2%;
+}
+
+.list__element__3 {
+	background: url(4th.png) center;
+	height: 78px;
+	background-repeat: no-repeat;
+	background-size: 437px 155px;
+	background-position: bottom;
+}
+
+.list__element__3 button {
+	text-align: center;
+	margin-top: 2.5%;
+}
+
+.list__element__4 {
+	background: url(2nd.png) center;
+	height: 78px;
+	background-repeat: no-repeat;
+	background-size: 437px 155px;
+	background-position: bottom;
+	margin-bottom: -39px;
+}
+
+.list__element__4 button {
+	text-align: center;
+	
+}
+.list__element__4 li{
+	margin-top: 1%;
+}
+
+.shop_now {
+	background-color: #0eb670;
+	width: 30%!important;
+	border: 2px solid #2fd28e;
+	padding: 10px;
+	color: white;
+	border-radius: 25px;
+	font-weight: 600;
+	letter-spacing: 1px
+}
+
+.grid_element_left .card__list {
+	margin-top: 70px;
+}
+
+.price_details {
+	color: #84868c;
+	font-size: 60%;
+	font-weight: 600;
+}
+
+.price {
+	color: #eb505b;
+	font-size: 200%;
+	font-weight: 800;
+}
+
+@media only screen and (min-width: 697px) {
+	.hide-md {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 696px) {
+	.responsive{max-width: 350px!important;}
+	.grid h6, p{ opacity: 0.8; }
+	.grid_element_left{margin-left: -4%;}
+	.grid_element_right{margin-right:  -4%;}
+	
+	.list__element__1 {
+		background: url(1st.png) center;
+		height: 80px;
+		background-repeat: no-repeat;
+		background-size: 90% 90%;
+		display: flex;
+		flex-direction: column;
+	}
+	.list__element__1 li {
+		text-align: center;
+		margin-top: 30px;
+	}
+	.list__element__2 {
+		background: url(3rd.png);
+		height: 80px;
+		background-repeat: no-repeat;
+		background-size: 90% 90%;
+		background-position: bottom;
+		display: flex;
+		flex-direction: column;
+		margin-top: -15%;
+	}
+	.list__element__2 li {
+		text-align: center;
+		margin-top: 10%;
+	}
+	.list__element__3{
+		background: url(4th.png) center;
+		height: 78px;
+		background-repeat: no-repeat;
+		background-size: 90% 90%;
+		background-position: bottom;
+		margin-top: -9px;
+	}
+	.list__element__3 li {
+		text-align: center;
+		margin-top: 15.5%;
+	}
+	.list__element__4 {
+		background: url(2nd.png) center;
+		height: 78px;
+		background-repeat: no-repeat;
+		background-size: 90% 90%;
+		background-position: bottom;
+		margin-top: -4%;
+	}
+	.list__element__4 li {
+		text-align: center;
+		margin-top: 0.5%;
+	}
+	.card__text {
+		text-align: initial;
+	}
+	.shop_now {
+		width: 40%!important;
+	}
+	.container {
+		margin-left: 2%!important;
+		margin-right: 2%!important;
+	}
+	.price_left,
+	.price_right {
+		flex-direction: column!important;
+		width: 100%;
+	}
+	.col-1,
+	.col-2,
+	.col-3 {
+		width: 100%;
+	}
+	.hide-sm {
+		display: none;
+	}
+	.section_3_heading{
+		font-size: 105%;
+		text-transform: uppercase;
+		letter-spacing: 2px;
+	}
+}
+
+.section_1 {
+	background: url(desktop.jpg);
+	height: 80%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+	color: white;
+}
+
+.section_1_sm {
+	background: url(mobile.jpg);
+	height: 60%;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom;
+	color: white;
+		
+}
+.section_1_sm_context{
+	padding-top: 20px;
+}
+.section_1_sm_text{
+	padding-left:5%;
+	padding-right: 5%;
+}
+
+.section2__image {
+	margin-top: 15%;
+}
+
+.section2__text {
+	text-align: justify;
+}
+
+.section_1_heading {
+	font-size: 280%;
+	font-weight: 300;
+}
+
+.section_2_heading,
+.section_3_heading,
+h3 , .section_2_heading_sm{
+	color: #004991;
+}
+.section_2{margin-top: 6%;}
+.section_1_context {
+	padding-top: 7%;
+}
+
+.section_1_context>button {
+	margin-top: 3%;
+}
+
+.responsive {
+	width: 100%;
+	max-width: 400px;
+	height: auto;
+}
+
+.info__cards {
+	height: 60px;
+	width: 120px;
+	background-color: #f1f5f9;
+	color: black;
+	z-index: 1;
+	position: absolute;
+	display: none;
+}
+
+.info__cards p {
+	font-size: 40%;
+}
+
+#card_1 {
+	left: 28%;
+	top: 200%;
+}
+
+#card_2 {
+	left: 28%;
+	top: 200%;
+}
+
+#card_3 {
+	left: 28%;
+	top: 200%;
+}
+
+.price_details_bold {
+	font-weight: 800;
+}
+
+.strike {
+	text-decoration: line-through;
+}
+
+.exclusive {
+	font-size: 6px;
+	background-color: #004991;
+	color: white;
+	padding: 0px 5px 0px 5px !important;
+}
+
+.active,
+.accordion:hover {
+	background-color: #004991;
+}
+
+.accordion:after {
+	content: '\002B';
+	font-weight: bold;
+	margin-left: 5px;
+}
+
+.active:after {
+	content: "\2212";
+	color: white;
+}
+
+.panel {
+	padding: 0 18px;
+	background-color: white;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+	height: 80px;
+	width: 100px;
+	font-size: 60%;
+	position: absolute;
+	z-index: 1;
+	text-align: left;
+	opacity: 0.8;
+}
+hr{
+	width: 60%;
+	background-color: #e1e1e1;
+
+        
+}
+.section_2_heading_sm
+{font-size: 135%;}
+.section_2__text_sm{text-align: justify;
+margin-top: -5%;}
+</style>
+<body>
+	<div class="section_1 hide-sm">
+   <div class="container">
+      <div class="section_1_context">
+         <h1 class="section_1_heading">The Puffy Better Sleep Survey</h1>
+         <p class="section_1_text">We believe better sleep is the key to living a happier and healthier life. And we’re on a<br> mission to help you get the sleep you've always dreamed of.</p>
+         <button class="shop_now">VIEW RESULTS</button>
+      </div>
+   </div>
+</div>
+<div class="section_1_sm hide-md">
+   <div class="container">
+      <div class="section_1_sm_context">
+         <h1 class="section_1_sm_heading">The Puffy Better Sleep Survey</h1>
+         <p class="section_1_sm_text">We believe better sleep is the key to living a happier and healthier life. And we’re on a mission to help you get the sleep you've always dreamed of.</p>
+         <button class="shop_now">VIEW RESULTS</button>
+      </div>
+   </div>
+</div>
+<div class="section_2 hide-sm">
+   <div class="container">
+      <h1 class="section_2_heading">State Of Sleep In The Past 6 Months</h1>
+      <div class="grid">
+         <div class="grid_element_left">
+            <p class="section_2__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+            <img  class="section2__image responsive" src="analysis.png" alt="sleep comparison analysis">
+         </div>
+         <div class="grid_element_right"><img  class="responsive" src="male_female.png" alt="male female sleep comparison"></div>
+      </div>
+   </div>
+</div>
+<div class="section_2 hide-md">
+   <div class="container">
+      <h6 class="section_2_heading_sm">State Of Sleep In The Past 6 Months</h6>
+      <div class="">
+         <p class="section_2__text_sm">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices gravida. Risus commodo viverra maecenas accumsan lacus vel facilisis. </p>
+         <img  class="responsive" src="male_female.png" alt="male female sleep comparison">
+         <img  class="section2__image responsive" src="analysis-sm.png" alt="sleep comparison analysis">
+      </div>
+   </div>
+</div>
+<hr>
+<div class="section_3">
+   <div class="container">
+      <div class="">
+         <h1 class="section_3_heading">Compare & Pick Your Perfect Puffy</h1>
+         <div class="grid">
+            <div class="grid_element_left">
+               <div class="card__heading">
+                  <h3>Puffy Mattress</h3>
+               </div>
+               <div class="card__body">
+                  <p class="card__text">The Original Puffy Mattress. Experience the award-winning Puffy Mattress that provides with the perfect of comfort and support.</p>
+                  <div class="card__list">
+                     <div class="list__element__1">
+                        <li>
+                           <button class="btn accordion" ><span class="mattress_text">Cooling Cloud™</span></button>
+                           <div class="panel">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                           </div>
+                        </li>
+                     </div>
+                     <div class="list__element__2">
+                        <li>
+                           <button class="btn accordion" ><span class="mattress_text">Climate Comfort™</span></button>
+                           <div class="panel">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                           </div>
+                        </li>
+                     </div>
+                     <div class="list__element__3">
+                        <li>
+                           <button class="btn accordion" ><span class="mattress_text">Firm Core Support</span></button>
+                           <div class="panel">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                           </div>
+                        </li>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <div class="grid_element_right">
+               <div class="card__heading">
+                  <h3>Puffy Lux Mattress</h3>
+               </div>
+               <div class="card__body">
+                  <p class="card__text">Experience luxurious comfort with the Puffy Lux Mattress and its exclusive layer of Body Adapting Dual Cloud Foam. Feel its balanced support and ultimate relaxation for a lifetime.</p>
+                  <div class="card__list">
+                     <div class="list__element__1">
+                        <li>
+                           <button class="btn accordion" ><span class="mattress_text">Cooling Cloud™</span></button>
+                           <div class="panel">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                           </div>
+                        </li>
+                     </div>
+                     <div class="list__element__4">
+                        <li>
+                           <span class="exclusive">EXCLUSIVE TO LUX</span>
+                           <div class="exclusive_align">
+                              <button class="btn accordion" ><span class="mattress_text">Plush Dual Cloud</span></button>
+                              <div class="panel">
+                                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                              </div>
+                           </div>
+                        </li>
+                     </div>
+                     <div class="list__element__2">
+                        <li>
+                           <button class="btn accordion" ><span class="mattress_text">Climate Comfort™</span></button>
+                           <div class="panel">
+                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                           </div>
+                     </div>
+                     <div class="list__element__3">
+                     	<li>
+                     <button class="btn accordion" ><span class="mattress_text">Firm Core Support</span></button>
+                     <div class="panel">
+                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                     </div></li>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="price_list">
+      <div class="price_left">
+      <div class="col-1">
+      <p class="price_details">From <span class="strike">$795</span> <br><span class="price">$495</span></p>
+      </div>
+      <div class="col-2"><img class="hide-sm" src="seperator.png"><img class="hide-md responsive" src="seperator_sm.png"></div>
+      <div class="col-3">
+      <p class="price_details"><span class="hide-sm">Pay as low as</span> <br><span class="price">$25/mo</span><br>with <span class="price_details_bold">Klama.</span></p>
+      </div>
+      </div>
+      <div class="price_right">
+      <div class="col-1">
+      <p class="price_details">From <span class="strike">$1,645</span> <br><span class="price">$495</span></p>
+      </div>
+      <div class="col-2"><img class="hide-sm" src="seperator.png"><img  class="hide-md responsive" src="seperator_sm.png"></div>
+      <div class="col-3">
+      <p class="price_details"><span class="hide-sm">Pay as low as</span> <br><span class="price">$27/mo</span><br>with <span class="price_details_bold">Klama.</span></p>
+      </div>
+      </div>
+      </div>
+      <div class="grid">
+      <button class="grid_element_left shop_now ">SHOP NOW</button>
+      <button class=" grid_element_right shop_now">SHOP NOW</button>
+      </div>
+   </div>
+</div>
+</body>
+</html>
+
+<script>
+var acc = document.getElementsByClassName("accordion");
+var i;
+
+for (i = 0; i < acc.length; i++) {
+  acc[i].addEventListener("click", function() {
+    this.classList.toggle("active");
+    var panel = this.nextElementSibling;
+    if (panel.style.maxHeight) {
+      panel.style.maxHeight = null;
+    } else {
+      panel.style.maxHeight = panel.scrollHeight + "px";
+    } 
+  });
+}
+</script>
